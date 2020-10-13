@@ -175,9 +175,9 @@
       <div class="container--wide site-services__container site-modern">
         <picture>
 
-          <source media="(max-width:780px)" srcset="./img/mobil-kids.png 1x, ./img/mobil-kids@2x">
+          <source media="(max-width:780px)" srcset="./img/mobil-kids.png 1x, ./img/mobil-kids@2x.png 2x">
 
-          <source media="(max-width:1030px)" srcset="./img/tab-modern.png 1x, ./img/tab-modern@2x">
+          <source media="(max-width:1030px)" srcset="./img/tab-modern.png 1x, ./img/tab-modern@2x.png 2x">
 
           <img class="site-modern__img" src="./img/kids.png" srcset="./img/kids.png 1x, ./img/kids@2x.png 2x" alt="rasm" width="641" height="682">
         </picture>
@@ -271,7 +271,24 @@
             <button class="button site-quality__button">Learn more</button>
           </div>
         </div>
-        <img class="site-quality__photo" src="./img/quality.png" alt="rasm" srcset="./img/quality.png 1x, ./img/quality@2x.png 2x" width="750" height="600">
+        <picture class="picture">
+          <source media="(max-width:780px)" srcset="./img/quality-mobil.png 1x, 
+          ./img/quality-mobil@2x.png 2x">
+
+          <source media="(max-width:1030px)" srcset="./img/quality-tab.png 1x, 
+          ./img/quality-tab@2x.png 2x">
+
+          <img class="site-quality__photo" src="./img/quality.png" alt="rasm" srcset="./img/quality.png 1x, ./img/quality@2x.png 2x" width="750" height="600">
+        </picture>  
+      </div>
+    </section>
+    <section class="siet-patients">
+      <div class="container siet-patients__container">
+        <div class="siet-patients__wrapper">
+          <h4 class="siet-patients__name">Reviews from our patients</h4>
+          <p class="siet-patients__text">Here are the latest reviews from our regular customers.
+          You can also leave your review by clicking on the link below</p>
+        </div>
       </div>
     </section>
   </main>

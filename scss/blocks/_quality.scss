@@ -3,11 +3,11 @@
 }
 .site-quality__container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
 }
 .site-quality__wrapper {
   max-width: 510px;
+  margin-right: 106px;
 }
 .site-quality__name {
   font-weight: 500;
@@ -28,7 +28,7 @@
   }
   &::after {
     content: "";
-    background-image: url(/img/export-logo.png);
+    background-image: url("/img/export-logo.png");
     display: inline-block;
     width: 275px;
     height: 152px;
@@ -44,6 +44,7 @@
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 34px;
+  margin-top: 0;
 }
 .site-quality__button-box {
   display: flex;
@@ -81,9 +82,94 @@
     opacity: 0.6;
   }
 }
+.picture {
+  margin-right: -20px;
+}
 .site-quality__photo {
   margin-right: -20px;
   width: 750px;
   height: 600px;
+  object-fit: cover;
   color: $text-dark;
+  flex-shrink: 0;
+}
+@include breakpoint-down (1030px) { 
+  .site-quality__wrapper {
+    margin-right: 90px;
+  }
+}
+@include breakpoint-down (950px) { 
+  .site-quality__wrapper {
+    margin-right: 70px;
+  }
+}
+@include breakpoint-down (780px) {
+  .site-quality__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  } 
+  .site-quality__wrapper {
+    max-width: 326px;
+    margin-right: 0;
+    order: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .picture {
+  margin-right: 0px;
+  }
+  .site-quality__photo {
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 36px;
+  }
+  .site-quality__name {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 5px;
+    &::before {
+      margin-left: 0;
+    }
+  }
+  .site-quality__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .site-quality__button-box {
+    justify-content: center;
+    &::before {
+      margin-left: 0;
+    }
+  }
+}
+@include breakpoint-down (340px) {
+  .site-quality__wrapper {
+    max-width: 300px;
+    margin-right: 0;
+    order: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@include breakpoint-down (320px) {
+  .site-quality__wrapper {
+    max-width: 280px;
+    margin-right: 0;
+    order: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@include breakpoint-down (313px) {
+  .site-quality__wrapper {
+    // max-width: 250px;
+    margin-right: 0;
+    order: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

@@ -1,0 +1,36 @@
+.siet-patients__wrapper {
+  max-width: 483px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.siet-patients__name {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $header-text-color;
+  margin-top: 0;
+  margin-bottom: 12px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: $gold-color;
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &::after {
+    content: "";
+    background-image: url("/img/export-logo.png");
+    display: inline-block;
+    width: 275px;
+    height: 152px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

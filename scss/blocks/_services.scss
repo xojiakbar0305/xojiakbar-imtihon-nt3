@@ -252,7 +252,7 @@
 }
 @include breakpoint-down (1055px) {
   .site-modern__box {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 @include breakpoint-down (1030px) {
