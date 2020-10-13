@@ -45,6 +45,21 @@
   line-height: 25px;
   margin-bottom: 34px;
 }
+.site-quality__button-box {
+  display: flex;
+  align-items: center;
+  &::before {
+    background-image: url("/img/sigin.png");
+    content: "";
+    width: 85px;
+    height: 70px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: auto;
+  }
+}
 .site-quality__button {
   width: 256px;
   display: flex;
@@ -55,15 +70,15 @@
   color: $text-white;
   border-radius: 5px;
   transition: opacity 0.3s ease;
-  margin-left: auto;
+  margin-left: 36px;
+  font-size: 18px;
+  line-height: 21px;
+  z-index: 20;
   &:hover {
     opacity: 0.8;
   }
   &:active {
     opacity: 0.6;
-  }
-  &::before {
-    background-image: url("");
   }
 }
 .site-quality__photo {
