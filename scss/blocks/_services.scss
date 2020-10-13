@@ -1,0 +1,328 @@
+.site-services {
+  padding-bottom: 69px;
+}
+.site-services__title {
+  width: 744px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  &::before {
+  content: "";
+  background-image: url("/img/export-logo.png");
+    width: 275px;
+    height: 152px;
+    display: flex;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    background-position: center   center;
+    position: absolute;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+.site-services__name {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 11px;
+  color: $header-text-color;
+  &::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: $gold-color;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+}
+.site-services__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.site-services__boxs {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 65px;
+}
+.site-services__list {
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 0;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: space-between;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+.site-services__item {
+  width: 200px;
+  height: 240px;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 24px 52px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-right: 13px;
+  margin-left: 13px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 77px;
+    height: 68px;
+    margin-bottom: 13px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+  }
+  &:nth-child(1)::before {
+    background-image: url("/img/zuba.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("/img/pasta.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("/img/lupa.png");
+  }
+  &:nth-child(4)::before {
+    background-image: url("/img/angel.png");
+  }
+}
+.site-services__heading {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: $header-text-color;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+.site-services__s {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+  margin-bottom: 3px;
+  color: rgba(0, 0, 0, 0.25);
+  &::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: $price-color;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+}
+.site-services__span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $price-color;
+}
+.site-services__container {
+  display: flex;
+}
+.site-modern__img {
+  margin-left: -20px;
+  width: 641px;
+  height: 682px;
+}
+.site-modern__box {
+  width: 798px;
+  margin-left: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.site-modern__heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $header-text-color;
+  margin-top: 0;
+  margin-bottom: 15px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: $gold-color;
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &::after {
+    content: "";
+    background-image: url("/img/export-logo.png");
+    display: inline-block;
+    width: 275px;
+    height: 152px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 22px;
+    left: 0;
+  }
+}
+.site-modern__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px; 
+  margin-top: 0; 
+  margin-bottom: 27px;
+  color: $text-dark;
+}
+.wrapper-boxs {
+  display: flex;
+   &::before {
+    content: "";
+    display: flex;
+    width: 72px;
+    height: 70px;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+  }
+  &:nth-child(1)::before {
+    background-image: url("/img/expert.png");
+  }
+  &:nth-child(2)::before {
+    background-image: url("/img/zuba.png");
+  }
+  &:nth-child(3)::before {
+    background-image: url("/img/map.png");
+  }
+}
+.wrapper-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.wrapper-box__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-dark;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.wrapper-box__text {
+  max-width: 510px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+@include breakpoint-down (1150px) {
+  .site-modern__box {
+    margin-left: 90px;
+  }
+}
+@include breakpoint-down (1130px) {
+  .site-modern__box {
+    margin-left: 70px;
+  }
+}
+@include breakpoint-down (1090px) {
+  .site-modern__box {
+    margin-left: 50px;
+  }
+}
+@include breakpoint-down (1065px) {
+  .site-modern__box {
+    margin-left: 40px;
+  }
+}
+@include breakpoint-down (1055px) {
+  .site-modern__box {
+    margin-left: 0;
+  }
+}
+@include breakpoint-down (1030px) {
+  .site-services__list {
+    max-width: 755px;
+  }
+  .site-modern__box {
+    margin-left: 0;
+  }
+}
+@include breakpoint-down (780px) {
+  .site-services__list {
+    max-width: 600px;
+  }
+  .site-services__container {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .site-services__title {
+    width: auto;
+  }
+  .site-modern__img {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .site-modern__box {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .site-modern__heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .site-modern__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@include breakpoint-down (750px) {
+  .site-services__list {
+    max-width: 550px;
+  }
+}
+@include breakpoint-down (600px) {
+  .site-prev__button {
+    display: none;
+  }
+  .site-next__button {
+    display: none;
+  }
+  .wrapper-boxs {
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+  .wrapper-box__name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .wrapper-box__text {
+    display: none;
+  }
+}

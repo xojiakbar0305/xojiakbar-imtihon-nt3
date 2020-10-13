@@ -1,0 +1,109 @@
+.site-team {
+  padding-bottom: 94px;
+}
+.site-team__wrapper {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.site-team__name {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 13px;
+  color: $header-text-color;
+  position: relative;
+  &::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: $gold-color;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  &::after {
+    content: "";
+    background-image: url("/img/export-logo.png");
+    display: inline-block;
+    width: 275px;
+    height: 152px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.site-team__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 0;
+  color: $title-text-color;
+}
+.site-team__box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 21px;
+}
+.site-team__list {
+  padding: 0;
+  margin: 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  list-style-type: none;
+  display: flex;
+  // justify-content: center;
+  position: relative;
+}
+.site-team__item {
+  width: 300px;
+  margin-left: 26px;
+  margin-right: 26px;
+  flex-shrink: 0;
+}
+.site-team__heading {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-dark;
+}
+.site-team__span {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-dark;
+}
+@include breakpoint-down (1030px) {
+  .site-team__list {
+    max-width: 860px;
+  }
+}
+@include breakpoint-down (970px) {
+  .site-team__list {
+    max-width: 800px;
+  }
+}
+@include breakpoint-down (780px) {
+  .site-team__wrapper {
+    width: auto;
+  }
+  .site-team__list {
+    max-width: 600px;
+  }
+}
+@include breakpoint-down (750px) {
+  .site-team__list {
+    max-width: 500px;
+  }
+}

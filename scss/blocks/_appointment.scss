@@ -1,0 +1,163 @@
+.site-appointment {
+  padding-bottom: 70px;
+}
+.site-appointment__container {
+  display: flex;
+}
+.site-appointment__wrapper {
+  width: 300px;
+  background-color: #ffd600;
+  padding: 39px 49px 23px 49px;
+  border-radius: 5px;
+}
+.site-appointment__wrapper::before {
+  content: "";
+  width: 87px;
+  height: 87px;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+.site-appointment__wrapper:nth-child(1)::before {
+  background-image: url("/img/tish.svg");
+  mix-blend-mode: multiply;
+}
+.site-appointment__wrapper:nth-child(2)::before {
+  background-image: url("/img/pratez.svg");
+  mix-blend-mode: multiply;
+}
+.site-appointment__wrapper:not(:first-child) {
+  background-color: #ffe040;
+  mix-blend-mode: multiply;
+}
+.site-appointment__heading {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.site-appointment__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
+.site-appointment__form {
+  width: 540px;
+  margin-top: -62px;
+  border-radius: 5px;
+  background-color: $nav-color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 18px;
+}
+.form-box__name {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $text-white;
+  margin-bottom: 29px;
+  margin-top: 0;
+}
+.form-box__input {
+  padding: 20px 14px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ffffff;
+  background-color: $nav-color;
+}
+.form-box__input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.form-box__input:not(:placeholder-shown):valid {
+  border-color: #0055b8;
+  background-color: #ffffff;
+}
+.form-box__input:not(:last-child) {
+  margin-bottom: 16px;
+}
+.form-box__button {
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  padding: 17px 63px;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $header-text-color;
+  background-color: $gold-color;
+  margin-bottom: 22px;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.form-box__wrapper {
+  display: flex;
+  align-items: center;
+}
+.form-box__label {
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: $text-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.klon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+}
+.argenal:checked + .klon {
+    background-image: url("/img/ptich.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    background-position: center center;
+}
+.checkbox-hiden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+@include breakpoint-down (1030px) {
+  .site-appointment__container {
+    padding: 0;
+  }
+}
+@include breakpoint-down (880px) {
+  .site-appointment__wrapper {
+    display: none;
+  }
+  .site-appointment__form {
+    width: 100%;
+    margin: 0;
+  }
+}

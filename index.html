@@ -4,13 +4,275 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <h1 class="visually-hidden">dental service clinic</h1>
+  <!-- site header -->
+  <header class="site-header">
+    <!-- site header top -->
+    <div class="site-header__top">
+      <div class="container">
+        <ul class="site-header__list">
+          <li class="site-header__item item-phone">
+            <img class="site-header__item-photo" src="./img/phone.png" alt="site header phone img" width="29" height="29"
+            srcset="./img/phone.png 1x, ./img/phone@2x.png 2x">
+            <div>
+              <p class="site-header__item-text item-phone-text">Contact us</p>
+              <a class="button item-phone__link" href="tel:+998330757506">+7(342)216-22-27</a>
+            </div>
+          </li>
+          <li class="site-header__item item-logo">
+            <a class="item-logo__link" href="index.html">
+              <img class="item-logo__photo" src="./img/denta-img.png" alt="denta img" width="103" height="53"
+              srcset="./img/denta-img.png 1x, ./img/denta-img@2x.png 2x">
+            </a>
+          </li>
+          <li class="site-header__item item-clock">
+            <img class="site-header__item-photo" src="./img/clock.png" alt="site header clock" width="29" height="29" srcset="./img/clock.png 1x, ./img/clock@2x.png 2x">
+            <div>
+              <p class="site-header__item-text item-clock__text">Open now</p>
+              <span class="item-clock__span">Today we work until 19.00</span>
+            </div>
+          </li>
+        </ul>
+        <!-- nav bar -->
+        <nav class="navbar">
+          <div class="container navbar-container">
+            <a class="button logo-tab" href="index.html">
+              <img src="/img/dental _practice.png" alt="rasm">
+            </a>
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="button navbar__link" href="services.html">Services</a>
+              </li>
+              <li class="navbar__item">
+                <a class="button navbar__link" href="advantages.html">Advantages</a>
+              </li>
+              <li class="navbar__item">
+                <a class="button navbar__link" href="team.html">Team</a>
+              </li>
+              <li class="navbar__item">
+                <a class="button navbar__link" href="reviews.html">Reviews</a>
+              </li>
+              <li class="navbar__item">
+                <a class="button navbar__link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+            <div class="navbar__socials">
+              <a class="button navbar__socials-link" href="#">
+                <img class="navbar__socials-logo" src="./img/wkontakt.png" alt="rasm" srcset="./img/wkontakt.png 1x, ./img/wkontakt@2x.png 2x">
+              </a>
+              <a class="button navbar__socials-link" href="#">
+                <img class="navbar__socials-logo" src="./img/instagram.png" alt="rasm"
+                  srcset="./img/instagram.png 1x, ./img/instagram@2x.png 2x">
+              </a>
+              <a class="button navbar__socials-link" href="#">
+                <img class="navbar__socials-logo" src="./img/twitter.png" alt="rasm"
+                  srcset="./img/twitter.png 1x, ./img/twitter@2x.png 2x">
+              </a>
+            </div>
+            <div class="menu-box">
+              <button class="button button-open">
+              <img src="./img/gamburger.png" alt="rasm">
+              </button>
+              <button class="button button-close">
+                <img src="./img/Vector.png" alt="rasm">
+              </button>
+            </div>  
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main class="site-main">
+    <section class="site-get">
+      <img class="site-get__img-mobil" src="./img/mobilni-img-bg.png" alt="rasm">
+      <div class="container site-get__container">
+        <div class="site-get__wrapper">
+          <p class="site-get__text">Modern technology and expert-class dentists</p>
+          <h2 class="site-get__name">get a brilliant smile <br>for every day</h2>
+          <a class="button button-link site-get__link" href="#">get</a>
+          <div class="site-get__button-box">
+            <button class="button site-get__button" type="button">
+              <img src="./img/btn prev.png" alt="rasm" width="42" height="70">
+            </button>
+            <button class="button site-get__button" type="button">
+              <img src="./img/btn next.png" alt="rasm" width="70" height="70">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- site-appointment -->
+    <section class="site-appointment">
+      <div class="container site-appointment__container">
+        <div class="site-appointment__wrapper">
+          <h3 class="site-appointment__heading">Treatment</h3>
+          <p class="site-appointment__text">All types of dental treatment are carried out using the most modern technologies.</p>
+        </div>
+        <div class="site-appointment__wrapper">
+          <h3 class="site-appointment__heading">Prosthetics</h3>
+          <p class="site-appointment__text">We will help you find the most convenient and aesthetically attractive version of the prosthesis.
+          </p>
+        </div>
+        <form class="site-appointment__form form-box" action="https://echo.htmlacademy.ru" method="GET">
+          <h3 class="form-box__name">Appointment</h3>
+          <input class="form-box__input" type="text" name="text" placeholder="Name" aria-label="user name" required>
+          <input class="form-box__input" type="phone" name="Phone" placeholder="phone" aria-label="user phone" required>
+          <button class="button form-box__button" type="submit">Appointment</button>
+          <div class="form-box__wrapper">
+            <label class="form-box__label">
+              I give my consent to the storage<br>
+              and processing of personal data
+              <input class="argenal checkbox-hiden" type="checkbox" name="text" aria-label="checkbox" checked>
+              <span class="klon"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="site-services">
+      <div class="container">
+        <div class="site-services__title">
+          <h3 class="site-services__name">Services</h3>
+          <p class="site-services__text">We provide a wide range of services from treatment to prosthetics.<br>Therefore, you do not need to go anywhere else.</p>
+        </div>
+        <div class="site-services__boxs">
+          <ul class="site-services__list">
+            <li class="site-services__item">
+              <h4 class="site-services__heading">Dental treatment</h4>
+              <s class="site-services__s">5000₽</s>
+              <span class="site-services__span">3100₽</span>
+            </li>
+            <li class="site-services__item">
+              <h4 class="site-services__heading">Dental treatment</h4>
+              <s class="site-services__s">6000₽</s>
+              <span class="site-services__span">4600₽</span>
+            </li>
+            <li class="site-services__item">
+              <h4 class="site-services__heading">Dental treatment</h4>
+              <s class="site-services__s">1000₽</s>
+              <span class="site-services__span">FREE</span>
+            </li>
+            <li class="site-services__item">
+              <h4 class="site-services__heading">Dental treatment</h4>
+              <s class="site-services__s">5000₽</s>
+              <span class="site-services__span">3100₽</span>
+            </li>
+            <li class="site-services__item">
+              <h4 class="site-services__heading">Dental treatment</h4>
+              <s class="site-services__s">5000₽</s>
+              <span class="site-services__span">3100₽</span>
+            </li>
+          </ul>
+          <button class="button site-prev__button"></button>
+          <button class="button site-next__button"></button>
+        </div>
+      </div>
+      <div class="container--wide site-services__container site-modern">
+        <picture>
 
+          <source media="(max-width:780px)" srcset="./img/mobil-kids.png 1x, ./img/mobil-kids@2x">
 
+          <source media="(max-width:1030px)" srcset="./img/tab-modern.png 1x, ./img/tab-modern@2x">
 
-
+          <img class="site-modern__img" src="./img/kids.png" srcset="./img/kids.png 1x, ./img/kids@2x.png 2x" alt="rasm" width="641" height="682">
+        </picture>
+        <div class="site-modern__box">
+          <h3 class="site-modern__heading">Modern technology and <br>expert-class dentists</h3>
+          <p class="site-modern__text">Even the best doctor is not able to “squeeze” out of technology more than the potential that manufacturers have laid in
+          it. This primarily relates to medical equipment and instruments.
+          Therefore, the better equipped the dental clinic is, the better, safer and faster the work is done.
+          We do not consider it possible to save on technology and tools. Everything that is worthy of the attention of
+          professional dentists is already with us.</p>
+          <div class="site-modern__wrapper wrapper">
+            <div class="wrapper-boxs">
+              <div class="wrapper-box">
+                <h4 class="wrapper-box__name">Expert-class dentists</h4>
+                <p class="wrapper-box__text">All 13 dentists of our center are highly qualified specialists with extensive experience; each of them is sincerely
+                interested in further improving their professionalism.</p>
+              </div>
+            </div>
+            <div class="wrapper-boxs">
+              <div class="wrapper-box">
+                <h4 class="wrapper-box__name">Expert-class dentists</h4>
+                <p class="wrapper-box__text">All 13 dentists of our center are highly qualified specialists with extensive
+                  experience; each of them is sincerely
+                  interested in further improving their professionalism.</p>
+              </div>
+            </div>
+            <div class="wrapper-boxs">
+              <div class="wrapper-box">
+                <h4 class="wrapper-box__name">Expert-class dentists</h4>
+                <p class="wrapper-box__text">All 13 dentists of our center are highly qualified specialists with extensive experience; each of them is sincerely
+                interested in further improving their professionalism.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team -->
+    <section class="site-team">
+      <div class="container site-team__container">
+        <div class="site-team__wrapper">
+          <h4 class="site-team__name">Professional team</h4>
+          <p class="site-team__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists.
+          All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+        </div>
+        <div class="site-team__box">
+          <ul class="site-team__list">
+            <li class="site-team__item">
+              <img class="site-team__photo" src="img/anna.png" srcset="img/anna.png 1x, img/anna@2x.png 2x" width="300" height="350" alt="rasm">
+              <h5 class="site-team__heading">Anna Petrova</h5>
+              <span class="site-team__span">Expert-class dentist</span>
+            </li>
+            <li class="site-team__item">
+              <img class="site-team__photo" src="img/ivan.png"
+                srcset="img/ivan.png 1x, img/ivan@2x.png 2x" width="300" height="350" alt="rasm">
+              <h5 class="site-team__heading">Ivan Ivanov</h5>
+              <span class="site-team__span">Expert-class dentist</span>
+            </li>
+            <li class="site-team__item">
+              <img class="site-team__photo" src="img/larisa.png"
+                srcset="img/larisa.png 1x, img/larisa@2x.png 2x" width="300" height="350" alt="rasm">
+              <h5 class="site-team__heading">Larisa Vasileva</h5>
+              <span class="site-team__span">Expert-class dentist</span>
+            </li>
+            <li class="site-team__item">
+              <img class="site-team__photo" src="img/larisa.png" srcset="img/larisa.png 1x, img/larisa@2x.png 2x" width="300"
+                height="350" alt="rasm">
+              <h5 class="site-team__heading">Larisa Vasileva</h5>
+              <span class="site-team__span">Expert-class dentist</span>
+            </li>
+          </ul>
+          <button class="button site-prev__button"></button>
+          <button class="button site-next__button"></button>
+        </div>
+      </div>
+    </section>
+    <section class="site-quality"> 
+      <div class="container--wide site-quality__container">
+        <div class="site-quality__wrapper">
+          <h5 class="site-quality__name">We are confident in the quality of our services</h5>
+          <p class="site-quality__text">About 50 thousand patients opted for the Dental Practice dental center.
+          People come to us as a family, because trust and comfort are important for the health of loved ones. And we provide
+          this:
+          - You do not need to go anywhere else - the center provides the whole range of dental services - treatment and
+          diagnosis, as well as prevention.
+          - We have reasonable prices. You pay for quality. And you will be offered different opportunities.
+          - We also do not pursue cheapness. This is our reasonable choice - only good materials should be used in the treatment,
+          and professionals should deal with it.
+          - For regular customers discounts from 5 to 20%.</p>
+          <button class="button site-quality__button">Learn more</button>
+        </div>
+        <img class="site-quality__photo" src="./img/quality.png" alt="rasm" srcset="./img/quality.png 1x, ./img/quality@2x.png 2x" width="750" height="600">
+      </div>
+    </section>
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>

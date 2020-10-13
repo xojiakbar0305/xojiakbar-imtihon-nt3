@@ -1,0 +1,109 @@
+.site-get {
+  padding-top: 331px;
+  padding-bottom: 147px;
+  background-image: url("/img/header-bg.png");
+  background-size: cover;
+  background-position: right calc(50% - 0px) bottom;
+  background-repeat: no-repeat;
+}
+.site-get__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $header-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.site-get__name {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $header-text-color;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+.site-get__link {
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.site-get__button {
+  transition: opacity 0.3s ease;
+  height: 70px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.site-get__img-mobil {
+  display: none;
+}
+@include breakpoint-down (1030px) {
+  .site-get {
+    padding-top: 331px;
+    padding-bottom: 147px;
+    background-image: url("/img/bg-tab.png");
+  }
+}
+@include breakpoint-down (900px) {
+  .site-get {
+    background-image: url("/img/mobilni-img-bg.png");
+    background-position: center center;
+    background-size: 100%;
+  }
+}
+@include breakpoint-down (880px) {
+  .site-get__img-mobil {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 21px;
+  }
+  .site-get {
+    background-image: none;
+    padding-top: 0;
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .site-get__link {
+    display: none;
+  }
+  body {
+    margin-top: 70px;
+  }
+  .site-get__button-box {
+    position: absolute;
+    bottom: 218px;
+  }
+  .site-get__wrapper {
+    text-align: center;
+  }
+}
+
+@include breakpoint-down (780px) {
+  .site-get__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .site-get__name {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .form-box__button {
+    width: 100% !important;
+  }
+}
+@include breakpoint-down (380px) {
+  .site-get__button-box {
+    bottom: 265px;
+  }
+}
